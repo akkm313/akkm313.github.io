@@ -1,0 +1,79 @@
+.navbar-brand{font-family: 'VT323', monospace; font-size: 50px;}
+.navbar-social {font-size:20px; text-decoration: underline; }
+
+
+.terminal {
+    position: relative;
+    width: 95%;
+    max-width: 600px;
+    border-radius: 6px;
+    padding-top: 45px;
+    margin-top: 8px;
+    overflow:auto;
+    background-color: rgb(15, 15, 16);
+    text-overflow: ellipsis;
+  }
+
+  .terminal::before {
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: rgb(58, 58, 58);
+    color: #c2c3c4;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 14px 0;
+    text-indent: 4px;
+  }
+
+  .terminal pre {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-size: 12px;
+    color: white;
+    padding: 0 1rem 1rem;
+    margin: 0;
+  }
+
+  .img-responsive{
+      max-width:65%;
+      height:100%;
+  }
+  .img-responsive:hover, .click-tech:hover
+    {
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+    }
+    .img-small
+    {
+      max-width:6%;
+      height:auto;
+      
+    }
+    .img-tech{
+      max-width:40%;
+    }
+    .heading{font-family: 'VT323', monospace; font-size: 30px;}
+
+    .blink {
+      animation: blinker 3s linear infinite;
+    
+     
+    }
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+    .blink-one {
+      padding:0;
+      animation: blinker-one 1s linear infinite;
+    }
+    @keyframes blinker-one {
+      0% {
+        opacity: 0;
+      }
+    }
